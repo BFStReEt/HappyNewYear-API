@@ -9,9 +9,9 @@ class Kernel extends ConsoleKernel
 {
     protected function schedule(Schedule $schedule)
     {
-        //     $schedule->command('send:newyeargreeting toidxbp03@gmail.com')
-        //         ->timezone('Asia/Ho_Chi_Minh') // Đảm bảo múi giờ Việt Nam được sử dụng
-        //         ->at('19:44'); // Thực thi vào lúc 19:40
+        // $schedule->command('send:newyeargreeting toidxbp03@gmail.com')
+        //     ->timezone('Asia/Ho_Chi_Minh') // Đảm bảo múi giờ Việt Nam được sử dụng
+        //     ->at('00:08'); // Thực thi vào lúc 19:40
         $schedule->command('send:newyeargreeting toidxbp03@gmail.com')
             ->everyMinute();
     }
